@@ -1,0 +1,65 @@
+@mixin learn-more($color, $id){
+    #{$id} {
+        width: 100%;
+    
+        .content {
+            height: 500px;
+            text-align: center;
+    
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            .wrap-content {
+                width: 90%;
+                height: 70%;
+    
+                display: flex;
+                flex-direction: column;
+        
+                h2 {
+                    flex: 0 0 30%;
+                    font-weight: 900;
+                    font-size: 2.5rem;
+                }
+    
+                .wrap-text {
+                    flex: 0 0 60%;
+                    display: flex;
+                    align-items: center;
+    
+                    p {
+                        color: $dark-grayish-blue;
+                        font-size: 1.2rem;
+                        line-height: 2rem;
+                    }    
+                }
+                
+                a {
+                    flex: 0 0 10%;
+    
+                    font-family: "Fraunces", sans-serif;
+                    font-weight: 900;
+                    color: black;
+
+                    cursor: pointer;
+    
+                    text-decoration-style: solid;
+                    text-decoration-color: hsla(hue($color), saturation($color), lightness($color), 0.4);
+                    text-decoration-line: underline;
+                    text-decoration-thickness: 0.5rem;
+
+                    // OR use this
+                    // text-shadow: $color 0 1rem 1rem;
+
+                    &:hover {
+                        text-decoration-color: $color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include learn-more($yellow, "#transform");
+@include learn-more($soft-red, "#stand-out");
