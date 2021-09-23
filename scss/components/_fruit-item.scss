@@ -1,0 +1,41 @@
+.fruit-item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    .fruit-text {
+        width: 90%;
+        height: 35%;
+
+        position: absolute;
+        bottom: 0;    
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+    
+        // border: 1px solid black;
+
+        h3, p {
+            color: $dark-desaturated-cyan;
+        }
+    
+        h3 {
+            flex: 0 0 30%;
+            font-family: "Fraunces", sans-serif;
+            font-weight: 900;
+            font-size: 2rem;
+
+            // border: 1px solid black;
+        }
+
+        p {
+            flex: 0 0 70%;
+
+            line-height: 1.8rem;
+
+            // border: 1px solid red;
+        }
+    }
+
+}
