@@ -1,0 +1,12 @@
+.testimonials-wrap {
+    width: 90%;
+    text-align: center;
+    // border: 2px solid black;
+
+    & > h3 {
+        color: $grayish-blue;
+        letter-spacing: 0.3rem;
+
+        margin-block: 2rem;
+    }
+}
