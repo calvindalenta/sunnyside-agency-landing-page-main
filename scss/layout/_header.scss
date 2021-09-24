@@ -78,8 +78,12 @@ header {
                         color: black;
                         font-family: "Fraunces", sans-serif;
                         text-transform: uppercase;
-                        padding: 1rem;
+                        padding: 1rem 2rem;
                         border-radius: 2rem;
+
+                        &:hover {
+                            background-color: hsla(hue($grayish-blue), saturation($grayish-blue), lightness($grayish-blue), 0.3);
+                        }
                     }
                 }
             }
