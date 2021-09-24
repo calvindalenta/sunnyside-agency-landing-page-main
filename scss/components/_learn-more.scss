@@ -73,7 +73,15 @@
             .content {
                 height: auto;
                 text-align: left;
+
+                .wrap-content {
+                    // border: 1px solid black;
+                    width: 70%;
+                    height: 60%;
+                }
+
             }
+
         }
     }
 
