@@ -1,6 +1,18 @@
 @mixin learn-more($color, $id){
     #{$id} {
         width: 100%;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+
+            &:first-child {
+                flex-direction: row-reverse;
+            }
+
+            img, .content {
+                flex: 0 0 50%;
+            }
+        }
     
         .content {
             height: 500px;
