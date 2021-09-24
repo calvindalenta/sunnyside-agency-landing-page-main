@@ -2,7 +2,7 @@
     #{$id} {
         width: 100%;
 
-        @media screen and (min-width: 768px) {
+        @include bigger-than-1024px {
             display: flex;
 
             &:first-child {

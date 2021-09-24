@@ -7,8 +7,9 @@
         width: 90%;
         height: 35%;
 
-        @media screen and (min-width: 768px) {
-            width: 60%
+        @include bigger-than-1024px {
+            width: 60%;
+            bottom: 10%;
         }
 
         position: absolute;
