@@ -42,6 +42,42 @@ header {
 
     nav {
         display: none;
+        position: absolute;
+        top: 100%;
+        width: 90%;
+
+        z-index: 1;
+
+        background-color: $white;
+
+        ul {
+            padding-block: 2rem;
+            
+            li {
+
+                padding: 1.5rem;
+                list-style-type: none;
+                text-align: center;
+                
+                a {
+                    color: $dark-grayish-blue;
+                    text-decoration: none;
+                }
+
+                .active {
+                    background-color: $yellow;
+                    color: black;
+                    font-family: "Fraunces", sans-serif;
+                    text-transform: uppercase;
+                    padding: 1rem 2rem;
+                    border-radius: 2rem;
+
+                    &:hover {
+                        background-color: hsla(hue($grayish-blue), saturation($grayish-blue), lightness($grayish-blue), 0.3);
+                    }
+                }
+            }
+        }
     }
 
     @include bigger-than-1024px {
@@ -55,8 +91,10 @@ header {
         }
 
         nav {
+            position: static;
             display: block;
             width: 40%;
+            background-color: transparent;
 
             // border: 1px solid black;
 
@@ -67,6 +105,7 @@ header {
 
                 li {
                     list-style-type: none;
+                    padding: 0;
 
                     a {
                         color: white;
@@ -74,16 +113,7 @@ header {
                     }
 
                     .active {
-                        background-color: white;
-                        color: black;
-                        font-family: "Fraunces", sans-serif;
-                        text-transform: uppercase;
-                        padding: 1rem 2rem;
-                        border-radius: 2rem;
-
-                        &:hover {
-                            background-color: hsla(hue($grayish-blue), saturation($grayish-blue), lightness($grayish-blue), 0.3);
-                        }
+                        background-color: $white;
                     }
                 }
             }
