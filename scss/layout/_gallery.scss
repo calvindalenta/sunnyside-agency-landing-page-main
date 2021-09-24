@@ -3,11 +3,6 @@
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
-    img {
-        display: block;
-        width: 100%;
-    }
 
     @include bigger-than-1024px {
         display: flex;

@@ -9,3 +9,10 @@ img {
     display: block;
     object-fit: cover;
 }
+
+header picture img,
+.learn-more img,
+.fruit-item img,
+.gallery-item img {
+    width: 100%;
+}

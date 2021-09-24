@@ -15,7 +15,7 @@ header {
         display: flex;
         justify-content: space-between;
 
-        // border: 1px solid white;
+        // border: 1px solid black;
     }
 
     .creative {
@@ -42,5 +42,48 @@ header {
 
     nav {
         display: none;
+    }
+
+    @include bigger-than-1024px {
+
+        .top {
+            padding-block: 2rem;
+        }
+
+        .hamburger {
+            display: none;
+        }
+
+        nav {
+            display: block;
+            width: 40%;
+
+            // border: 1px solid black;
+
+            ul {
+                display: flex;
+                justify-content: center;
+                gap: 10%;
+
+                li {
+                    list-style-type: none;
+
+                    a {
+                        color: white;
+                        text-decoration: none;
+                    }
+
+                    .active {
+                        background-color: white;
+                        color: black;
+                        font-family: "Fraunces", sans-serif;
+                        text-transform: uppercase;
+                        padding: 1rem;
+                        border-radius: 2rem;
+                    }
+                }
+            }
+        }
+
     }
 }
