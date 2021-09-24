@@ -47,6 +47,10 @@ footer {
         a {
             text-decoration: none;
             color: $dark-desaturated-cyan;
+
+            &:hover {
+                color: $white;
+            }
         }
     }
 
@@ -56,9 +60,10 @@ footer {
         justify-content: center;
         align-items: center;
         gap: 10%;
-
         // border: 2px solid black;
 
-        
+        img {
+            cursor: pointer;
+        }
     }
 }
