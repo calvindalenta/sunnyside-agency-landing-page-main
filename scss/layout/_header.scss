@@ -15,7 +15,7 @@ header {
         display: flex;
         justify-content: space-between;
 
-        border: 1px solid white;
+        // border: 1px solid white;
     }
 
     .creative {
@@ -23,9 +23,15 @@ header {
 
         position: absolute;
         top: 25%;
+
         text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
         
-        border: 1px solid white;
+        // border: 1px solid white;
     }
 
     h1 {
