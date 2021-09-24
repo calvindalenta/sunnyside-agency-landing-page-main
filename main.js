@@ -15,7 +15,7 @@ hamburger.addEventListener('click', () => {
 const breakpoint = 1024;
 window.onresize = () => {
     console.log(window.innerWidth)
-    if (window.innerWidth > breakpoint) {
+    if (window.innerWidth >= breakpoint) {
         nav.style.display = 'block'
     } else {
         nav.style.display = 'none';
