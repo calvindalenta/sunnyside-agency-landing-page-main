@@ -1,5 +1,17 @@
 .testimonials {
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+
+    margin-block: 10rem;
+
+     & > h3 {
+        display: block;
+        color: $grayish-blue;
+        letter-spacing: 0.3rem;
+
+        margin-block: 2rem;
+    }
 }
