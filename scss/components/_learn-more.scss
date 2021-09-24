@@ -1,18 +1,6 @@
 @mixin learn-more($color, $id){
     #{$id} {
         width: 100%;
-
-        @include bigger-than-1024px {
-            display: flex;
-
-            &:first-child {
-                flex-direction: row-reverse;
-            }
-
-            img, .content {
-                flex: 0 0 50%;
-            }
-        }
     
         .content {
             height: 500px;
@@ -70,7 +58,26 @@
                 }
             }
         }
+
+        @include bigger-than-1024px {
+            display: flex;
+
+            &:first-child {
+                flex-direction: row-reverse;
+            }
+
+            img, .content {
+                flex: 0 0 50%;
+            }
+
+            .content {
+                height: auto;
+                text-align: left;
+            }
+        }
     }
+
+    
 }
 
 @include learn-more($yellow, "#transform");
